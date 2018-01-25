@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <trustpilot>
+            <label>Trustpilot</label>
+            <sort_order>400</sort_order>
+        </trustpilot>
+    </tabs>
+    <sections>
+        <trustpilot module="trustpilot">
+            <label>General</label>
+            <tab>trustpilot</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <default_config_group translate="label">
+                    <label>Go to website settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>1</show_in_store>
+                </default_config_group>
+                <trustpilot_general_group translate="label">
+                    <label>General Settings</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>0</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <comment></comment>
+                    <fields>
+                        <trustpilot_key>
+                            <label>Key</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <comment><![CDATA[Key which is generated during integration setup in Trustpilot business site]]></comment>
+                            <show_in_default>0</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </trustpilot_key>
+                    </fields>
+                </trustpilot_general_group>
+            </groups>
+        </trustpilot>
+    </sections>
+</config>
